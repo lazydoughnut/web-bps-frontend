@@ -9,7 +9,7 @@ export const authService = {
             });
             return response.data;
         } catch (error) {
-            throw new Error('email / password salah: ' + error.response?.data?.message ||
+            throw new Error('gagal login ' + error.response?.data?.message ||
                 'Terjadi kesalahan');
         }
     },
